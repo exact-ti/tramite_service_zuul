@@ -49,8 +49,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 		
 		corsconfig.setAllowedOrigins(Arrays.asList("*"));
 		corsconfig.setAllowedMethods(Arrays.asList("POST","GET","PUT","DELETE","OPTIONS"));
-		corsconfig.setAllowCredentials(true);
-		corsconfig.setAllowedHeaders(Arrays.asList("Authorization","content-Type"));
+		corsconfig.setAllowedHeaders(Arrays.asList("*"));
 				
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		
